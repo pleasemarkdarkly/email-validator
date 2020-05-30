@@ -1,0 +1,1 @@
+export const getRssMb = () => process.memoryUsage().rss / Math.pow(1024, 2);
