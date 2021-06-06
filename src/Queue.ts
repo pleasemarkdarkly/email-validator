@@ -16,8 +16,6 @@ export class Queue extends EventEmitter {
     return super.emit(event, ...args);
   }
 
-
-
   currentlyExecuting = 0;
   pendingQueue: (() => Promise<any>)[] = [];
 

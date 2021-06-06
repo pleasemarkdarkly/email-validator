@@ -1,4 +1,11 @@
 {
+  "author": "pleasemarkdarkly",
+  "license": "MIT",
+  "scripts": {
+    "start": "",
+    "dev": "yarn && yarn tsc",
+    "validate" "node ./dist/index.js validate --dir /mnt/sda/collection/emails --outputDir /mnt/sda/collection/validated_emails",
+  },
   "dependencies": {
     "@types/node": "^13.9.1",
     "@types/p-queue": "^3.2.1",
@@ -6,6 +13,7 @@
     "@types/yargs": "^15.0.4",
     "deep-email-validator": "^0.1.15",
     "email-deep-validator": "^3.3.0",
+    "execa": "^4.0.2",
     "heapdump": "^0.3.15",
     "jest": "^25.1.0",
     "ora": "^4.0.3",

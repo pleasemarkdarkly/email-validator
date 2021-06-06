@@ -1,6 +1,5 @@
 import { promises as fsp } from "fs";
 import path from "path";
-
 export class SessionManager {
   private sessionData!: {
     archivesFinished: string[];
